@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: fastapi
-        image: my-fastapi-app  # Use the image name you tagged during Docker build
+        image: example.dkr.ecr.us-east-1.amazonaws.com/fastapi-app:latest  # Use the image name you tagged during Docker build
         ports:
         - containerPort: 80  # Container port to expose
         resources:
