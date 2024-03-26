@@ -16,6 +16,28 @@ Kubernetes, integrated with a Snowflake data pipeline.
 
 ### Dataset Overview
 
+```
+semi_structured_data.json
+
+[
+    {
+        "UserID": 151603712,
+        "UserActivity": {
+            "Design Idea": "Design Idea 1",
+            "Engagement Level": "High Engagement"
+        }
+    },
+    {
+        "UserID": 151603712,
+        "UserActivity": {
+            "Design Idea": "Design Idea 2",
+            "Engagement Level": "High Engagement"
+        }
+    },
+    ...
+]
+```
+
 - **Number of unique "User ID"**: 11,350
 - **Number of unique "Design Ideas"**: 3,600
 - **Types of "User Engagement"**: High, Medium, Low, Very Low
@@ -58,10 +80,10 @@ POST `/recommend/{user_id}`
 {
   "user_id": 86466985,
   "recommendations": [
-    "Design Idea 100", 
-    "Design Idea 1002", 
+    "Design Idea 100",
+    "Design Idea 1002",
     "Design Idea 1004"
- ]
+  ]
 }
 ```
 
