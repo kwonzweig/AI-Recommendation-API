@@ -42,7 +42,11 @@ semi_structured_data.json
 - **Number of unique "Design Ideas"**: 3,600
 - **Types of "User Engagement"**: High, Medium, Low, Very Low
 
-### Training result:
+### Model Training and Evaluation:
+
+- **Preprocessing**: Encoding user IDs and design ideas, and mapping engagement levels to numerical values.
+- **Architecture**: Embedding layers for users and items, combined through dense layers to predict engagement levels.
+- **Execution**: Compiled with Adam optimizer and mean squared error loss.
 
 ```
 Mean Squared Error: 1.18
@@ -52,6 +56,14 @@ Mean Absolute Error: 0.88
 - Baseline model can be built to compare the performance of the recommendation model.
 - Domain Expertise can be used to evaluate the model performance.
 - Hyperparameter tuning can be done to improve the model performance.
+
+### Deployment Steps
+
+1. **Build Docker Image**: Build the Docker image using the provided Dockerfile.
+2. **Run Docker Container**: Run the Docker container locally to test the API.
+3. **Deploy to Kubernetes**: Deploy the Docker container to a Kubernetes cluster.
+4. **API Testing**: Test the API using Swagger documentation or Postman.
+5. **Monitor and Scale**: Monitor the API performance and scale the deployment as needed.
 
 ## API Usage Example
 
